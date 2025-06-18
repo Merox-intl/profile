@@ -14,23 +14,24 @@ document.addEventListener('DOMContentLoaded', function () {
             this.style.transform = 'translateY(0)';
         });
     });
-
-    setInterval(() => {
-        let bg = `linear-gradient(${getRandomAngle()}, ${getRandomLightRGBA()}, ${getRandomLightRGBA()}, ${getRandomLightRGBA()})`;
-        document.body.style.backgroundImage = bg;
-    }, 2000);
 });
 
-function getRandomLightRGBA() {
-    const r = Math.floor(150 + Math.random() * 95);
-    const g = Math.floor(150 + Math.random() * 95);
-    const b = Math.floor(150 + Math.random() * 95);
-    const a = Math.random().toFixed(2);
+// function getRandomLightRGBA() {
+//     const r = Math.floor(Math.random() * 180);
+//     const g = Math.floor(Math.random() * 180);
+//     const b = Math.floor(Math.random() * 180);
+//     const a = Math.random().toFixed(2);
 
-    return `rgba(${r}, ${g}, ${b}, ${a})`;
-}
+//     return `rgba(${r}, ${g}, ${b}, ${a})`;
+// }
 
-function getRandomAngle() {
-    const rAngle = Math.floor(Math.random() * 360);
-    return `${rAngle}deg`;
-}
+// function getRandomAngle() {
+//     const rAngle = Math.floor(Math.random() * 360);
+//     return `${rAngle}deg`;
+// }
+
+// function changeBgColor() {
+//     let bg = `linear-gradient(${getRandomAngle()}, ${getRandomLightRGBA()}, ${getRandomLightRGBA()}, ${getRandomLightRGBA()})`;
+//     document.body.style.backgroundImage = bg;
+//     console.log(bg);
+// }
